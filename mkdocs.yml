@@ -1,0 +1,86 @@
+#[Info]
+site_name: 不再優雅
+site_url: https://www.cklist.cn/
+site_author: 不再優雅-安装架设 使用教程 使用技巧
+
+#[UI]
+theme:
+  name: material
+
+  favicon: fontawesome/brands/youtube
+  palette:
+    # scheme: slate
+    primary: deep purple
+  language: zh
+  icon:
+    logo: fontawesome/brands/youtube
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+    
+
+
+  
+# 开启流程图
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys # 键盘键
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes  # 脚注
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.attr_list
+
+plugins:
+  - search
+  - glightbox
+
+# 底部图标
+extra:
+  generator: false
+  social:
+      
+    - icon: fontawesome/brands/gitlab
+      link: https://gitee.com/cklist/IT-System
+      name: Gitee
+      
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/hsnet1987
+      name: Docker
+      
+    - icon: fontawesome/brands/github
+      link: https://github.com/hsnet1987
+      name: Github
+
+# 版权声明
+copyright: <div class="footer">
+        <img src="/Imgs/备案图标.png"">
+        <a href="https://beian.mps.gov.cn/#/query/webSearch">粤公网安备44060602002430</a>
+        <a href="https://beian.miit.gov.cn/">粤ICP备2023131250号-1</a>
+        Copyright &copy; 2020 - 2025 cklist
+      </div>
+
