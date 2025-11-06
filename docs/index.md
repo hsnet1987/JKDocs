@@ -14,6 +14,6 @@
 
 !!! abstract "测试图大小"
     <figure markdown="span">
-     ![alt text](/Imgs/liebao_wallpaper.jpg){ width="600" }
+     ![alt text](/images/IMG_0163.JPG){ width="600" }
     <figcaption></figcaption>
     </figure>
