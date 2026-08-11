@@ -1,11 +1,38 @@
-/* 左侧导航菜单靠最左边 */
-.md-sidebar--primary {
-  padding-left: 0 !important;
+/* ===== 全局宽屏 + 左侧菜单贴边 ===== */
+
+/* 主容器全宽 */
+.md-grid {
+  max-width: 100% !important;
   margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 页面主内容区紧贴左侧 */
+.md-container {
+  max-width: 100% !important;
+}
+
+.md-main__inner {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 左侧导航栏贴到最左边 */
+.md-sidebar--primary {
+  left: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 260px !important;
 }
 
 .md-sidebar--primary .md-sidebar__inner {
-  padding-left: 0 !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -13,39 +40,48 @@
   margin-left: 0 !important;
 }
 
-.md-nav {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-.md-nav__list {
-  padding-left: 0 !important;
-}
-
+.md-nav,
+.md-nav__list,
 .md-nav__item {
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
 
 .md-nav__link {
-  padding-left: 0.4rem !important;
+  padding-left: 0.3rem !important;
 }
 
-.md-nav__icon {
+/* 主内容区自适应剩余宽度 */
+.md-content {
+  max-width: calc(100% - 560px) !important;
+  margin-left: 260px !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* 右侧目录栏 */
+.md-sidebar--secondary {
+  width: 240px !important;
+  right: 0 !important;
+}
+
+/* 顶部 header 也拉满 */
+.md-header__inner {
+  max-width: 100% !important;
   margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
-/* 桌面端整个侧边栏紧贴左侧 */
-@media screen and (min-width: 76.25em) {
+/* 移动端恢复默认 */
+@media screen and (max-width: 76.24em) {
+  .md-content {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
   .md-sidebar--primary {
-    width: 14rem;
-  }
-  
-  .md-grid {
-    max-width: 100%;
-  }
-  
-  .md-main__inner {
-    padding-left: 0;
+    width: auto !important;
   }
 }
