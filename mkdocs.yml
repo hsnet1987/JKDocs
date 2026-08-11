@@ -1,0 +1,126 @@
+#[Info]
+site_name: 不再優雅
+site_url: https://www.cklist.cn/
+site_author: 不再優雅-安装架设 使用教程 使用技巧
+
+#[UI]
+theme:
+  name: material
+
+  favicon: fontawesome/brands/youtube
+  palette:
+    # scheme: slate
+    primary: deep purple
+  language: zh
+  icon:
+    logo: fontawesome/brands/youtube
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+    
+
+
+  
+# 开启流程图
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys # 键盘键
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes  # 脚注
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.attr_list
+
+plugins:
+  - search
+  - glightbox
+
+# 底部图标
+extra:
+  generator: false
+  social:
+      
+    - icon: fontawesome/brands/gitlab
+      link: https://gitee.com/cklist/IT-System
+      name: Gitee
+      
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/hsnet1987
+      name: Docker
+      
+    - icon: fontawesome/brands/github
+      link: https://github.com/hsnet1987
+      name: Github
+
+# 版权声明
+docs_dir: Doc
+
+nav:
+  - 首页: index.md
+  - NAS:
+    - arpl在线编译安装群晖教程安装黑群晖: NAS/arpl在线编译安装群晖教程安装黑群晖.md
+    - nas群晖docker部署qbittorrent下载器: NAS/nas群晖docker部署qbittorrent下载器.md
+    - vmware-安装黑群晖ds918懒人包: NAS/vmware-安装黑群晖ds918懒人包.md
+    - 利用群晖docker搭建alist云盘: NAS/利用群晖docker搭建alist云盘.md
+    - 晖docker搭建alist挂载阿里云盘: NAS/晖docker搭建alist挂载阿里云盘.md
+    - 群晖7-1-部署-cat一站式-it-运维管理平台自带数据库）: NAS/群晖7-1-部署-cat一站式-it-运维管理平台自带数据库）.md
+    - 群晖docker搭建alist挂载本地文件夹: NAS/群晖docker搭建alist挂载本地文件夹.md
+    - 群晖docker架设微力同步: NAS/群晖docker架设微力同步.md
+    - 群晖docker部署chemex-it资产管理系统: NAS/群晖docker部署chemex-it资产管理系统.md
+    - 群晖docker部署cloudreve个人网盘: NAS/群晖docker部署cloudreve个人网盘.md
+    - 群晖dsm7-x的登录界面美化成半透明: NAS/群晖dsm7-x的登录界面美化成半透明.md
+    - 黑群晖显示真实cpu信息（支持7-1）: NAS/黑群晖显示真实cpu信息（支持7-1）.md
+  - Linux:
+    - centos基于docker安装chemex-it-资产管理系统: Linux/centos基于docker安装chemex-it-资产管理系统.md
+    - docker-unlock-music-解锁音乐格式，享受自由聆听: Linux/docker-unlock-music-解锁音乐格式，享受自由聆听.md
+    - docker-快速部署搭建docsify个人知识库: Linux/docker-快速部署搭建docsify个人知识库.md
+    - ubuntu-安装宝塔面板: Linux/ubuntu-安装宝塔面板.md
+    - 宝塔面板安装it-chemex资产管理系统: Linux/宝塔面板安装it-chemex资产管理系统.md
+    - 已失效宝塔安装-cat一站式it运维管理平台: Linux/已失效宝塔安装-cat一站式it运维管理平台.md
+    - 新宝塔安装-cat一站式it运维管理平台正式版: Linux/新宝塔安装-cat一站式it运维管理平台正式版.md
+  - Windows:
+    - pe下安装纯版windows系统: Windows/pe下安装纯版windows系统.md
+    - ventoy新一代多系统启动u盘解决方案: Windows/ventoy新一代多系统启动u盘解决方案.md
+    - win10如何关闭defende: Windows/win10如何关闭defende.md
+    - win10电脑设置虚拟内存: Windows/win10电脑设置虚拟内存.md
+    - win10系统安装教程: Windows/win10系统安装教程.md
+    - win10蓝屏代码大全: Windows/win10蓝屏代码大全.md
+    - windows-11右键菜单改成windows-10一-样: Windows/windows-11右键菜单改成windows-10一-样.md
+    - windows下部署cat-一站式-it-运维管理平台: Windows/windows下部署cat-一站式-it-运维管理平台.md
+    - 旧系统电脑win7重装系统（win7: Windows/旧系统电脑win7重装系统（win7.md
+  - 路由器:
+    - 爱快路由器ipv6解析阿里云域名: 路由器/爱快路由器ipv6解析阿里云域名.md
+    - 爱快路由器开启ftp服务器: 路由器/爱快路由器开启ftp服务器.md
+    - 爱快路由器开启http服务: 路由器/爱快路由器开启http服务.md
+    - 爱快路由器开启ipv6: 路由器/爱快路由器开启ipv6.md
+
+copyright: <div class="footer">
+        <img src="/Imgs/备案图标.png"">
+        <a href="https://beian.mps.gov.cn/#/query/webSearch">粤公网安备44060602002430</a>
+        <a href="https://beian.miit.gov.cn/">粤ICP备2023131250号-1</a>
+        Copyright &copy; 2020 - 2025 cklist
+      </div>
