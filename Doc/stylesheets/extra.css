@@ -1,0 +1,51 @@
+/* 左侧导航菜单靠最左边 */
+.md-sidebar--primary {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.md-sidebar--primary .md-sidebar__inner {
+  padding-left: 0 !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.md-nav {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.md-nav__list {
+  padding-left: 0 !important;
+}
+
+.md-nav__item {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.md-nav__link {
+  padding-left: 0.4rem !important;
+}
+
+.md-nav__icon {
+  margin-left: 0 !important;
+}
+
+/* 桌面端整个侧边栏紧贴左侧 */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 14rem;
+  }
+  
+  .md-grid {
+    max-width: 100%;
+  }
+  
+  .md-main__inner {
+    padding-left: 0;
+  }
+}

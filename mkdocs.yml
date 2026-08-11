@@ -28,7 +28,7 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
 
-    
+
 
 
   
@@ -58,6 +58,10 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+
+# 自定义样式：左侧菜单靠最左
+extra_css:
+  - stylesheets/extra.css
 
 # 底部图标
 extra:
